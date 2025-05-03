@@ -460,7 +460,7 @@ tr:hover {
 /* 页脚 */
 .footer {
     background-color: var(--background-darker);
-    padding: 50px 0 20px;
+    padding: 20px 0 20px;
     border-top: 1px solid var(--border-color);
 }
 
@@ -536,8 +536,8 @@ tr:hover {
 
 .footer-bottom {
     text-align: center;
-    padding-top: 20px;
-    border-top: 1px solid var(--border-color);
+    padding-top: 0;
+    border-top: 0;
     color: var(--text-secondary);
     font-size: 0.9rem;
 }
