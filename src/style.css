@@ -40,13 +40,8 @@ body {
 /* 头部样式 */
 .header {
     background-color: var(--background-darker);
-    padding: 15px 0;
-    border-bottom: 1px solid var(--border-color);
-    position: fixed;
-    top: 25px;
-    left: 0;
-    right: 0;
-    z-index: 100;
+    padding: 10px 0 0 0;
+    border-bottom: 0;
 }
 
 .header .container {
@@ -159,8 +154,8 @@ body {
 
 /* 主要内容区域 */
 .main-content {
-    padding: 30px 0;
-    margin-top: 80px;
+    padding: 10px 0;
+    margin-top: 0px;
 }
 
 section {
@@ -631,11 +626,6 @@ tr:hover {
     padding: 5px 0;
     border-bottom: 1px solid var(--border-color);
     overflow: hidden;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 101;
 }
 
 .ticker-bar .container {
@@ -704,5 +694,4 @@ tr:hover {
     object-fit: cover;
     border-radius: 8px;
 }
-
 
