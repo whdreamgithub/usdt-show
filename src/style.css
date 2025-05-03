@@ -609,7 +609,7 @@ tr:hover {
     
     .ticker-content {
         flex-wrap: wrap;
-        gap: 6px 16px;
+        gap: 6px 16px !important;
     }
     .ticker-item {
         margin-bottom: 2px;
