@@ -135,6 +135,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // 设置聊天输入事件
     setupChatInput();
+    
+    // 调整布局
+    adjustLayout();
 });
 
 // 填充行情表格
@@ -607,3 +610,14 @@ notificationStyles.textContent = `
     }
 `;
 document.head.appendChild(notificationStyles);
+
+function adjustLayout() {
+    const header = document.querySelector('.header');
+    const ticker = document.querySelector('.ticker-bar');
+    const main = document.querySelector('.main-content');
+    if (!header || !ticker || !main) return;
+    ticker.style.top = header.offsetHeight + 'px';
+    main.style.marginTop = (header.offsetHeight + ticker.offsetHeight) + 'px';
+}
+window.addEventListener('DOMContentLoaded', adjustLayout);
+window.addEventListener('resize', adjustLayout);
