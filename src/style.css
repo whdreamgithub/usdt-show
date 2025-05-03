@@ -419,7 +419,7 @@ tr:hover {
 
 .chat-messages {
     height: 300px;
-    padding: 20px;
+    padding: 10px;
     overflow-y: auto;
     background-color: var(--background-darker);
 }
