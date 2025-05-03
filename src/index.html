@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoTracker - 加密货币行情追踪</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fab fa-bitcoin"></i>
+                <span>CryptoTracker</span>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#" class="active">市场</a></li>
+                    <li><a href="#">交易对</a></li>
+                    <li><a href="#">期货</a></li>
+                    <li><a href="#">资讯</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="alert-btn"><i class="fas fa-bell"></i></button>
+                <div class="search-box">
+                    <input type="text" placeholder="搜索币种...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <select class="language-select">
+                    <option value="zh">中文</option>
+                    <option value="en">English</option>
+                    <option value="ja">日本語</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="market-overview">
+            <div class="container">
+                <h2>行情总览</h2>
+                <div class="market-stats">
+                    <div class="stat-card">
+                        <h3>总市值</h3>
+                        <p>$1.25T <span class="positive">+2.34%</span></p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>24h交易量</h3>
+                        <p>$48.56B <span class="negative">-1.78%</span></p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>BTC优势</h3>
+                        <p>42.8% <span class="positive">+0.5%</span></p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>恐惧贪婪指数</h3>
+                        <p>56 <span class="neutral">中性</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ad-banner">
+            <div class="container">
+                <div class="ad-content">
+                    <p>高级交易工具 - 立即注册获取20%手续费折扣</p>
+                    <button class="ad-btn">立即注册</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="chart-section">
+            <div class="container">
+                <div class="chart-container">
+                    <div class="chart-box">
+                        <h3>BTC/USDT</h3>
+                        <div class="chart-placeholder" id="chart1"></div>
+                    </div>
+                    <div class="chart-box">
+                        <h3>ETH/USDT</h3>
+                        <div class="chart-placeholder" id="chart2"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="market-table">
+            <div class="container">
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>排名</th>
+                                <th>名称</th>
+                                <th>价格</th>
+                                <th>24h涨跌</th>
+                                <th>24h交易量</th>
+                                <th>市值</th>
+                                <th>7天走势</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- 数据将通过JS动态加载 -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="ad-banner secondary">
+            <div class="container">
+                <div class="ad-content">
+                    <p>下载我们的移动应用，随时随地追踪行情</p>
+                    <div class="download-btns">
+                        <button class="app-store-btn"><i class="fab fa-apple"></i> App Store</button>
+                        <button class="play-store-btn"><i class="fab fa-google-play"></i> Google Play</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="news-section">
+            <div class="container">
+                <h2>最新资讯</h2>
+                <div class="news-grid">
+                    <div class="news-card">
+                        <div class="news-image" style="background-image: url('https://via.placeholder.com/300x150')"></div>
+                        <h3>比特币ETF通过率上升至75%</h3>
+                        <p>分析师预测SEC可能在年底前批准首个比特币现货ETF...</p>
+                        <span class="news-time">2小时前</span>
+                    </div>
+                    <div class="news-card">
+                        <div class="news-image" style="background-image: url('https://via.placeholder.com/300x150')"></div>
+                        <h3>以太坊2.0升级进度更新</h3>
+                        <p>核心开发者会议确定了下一次硬分叉的时间表...</p>
+                        <span class="news-time">5小时前</span>
+                    </div>
+                    <div class="news-card">
+                        <div class="news-image" style="background-image: url('https://via.placeholder.com/300x150')"></div>
+                        <h3>稳定币监管新动向</h3>
+                        <p>多国财政部长讨论稳定币国际监管框架...</p>
+                        <span class="news-time">昨天</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="chat-section">
+            <div class="container">
+                <h2>社区讨论</h2>
+                <div class="chat-window">
+                    <div class="chat-messages">
+                        <!-- 消息将通过JS动态加载 -->
+                    </div>
+                    <div class="chat-input">
+                        <input type="text" placeholder="输入消息...">
+                        <button><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fab fa-bitcoin"></i>
+                    <span>CryptoTracker</span>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>产品</h4>
+                        <ul>
+                            <li><a href="#">行情数据</a></li>
+                            <li><a href="#">API服务</a></li>
+                            <li><a href="#">移动应用</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h4>公司</h4>
+                        <ul>
+                            <li><a href="#">关于我们</a></li>
+                            <li><a href="#">联系方式</a></li>
+                            <li><a href="#">招聘</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h4>法律</h4>
+                        <ul>
+                            <li><a href="#">服务条款</a></li>
+                            <li><a href="#">隐私政策</a></li>
+                            <li><a href="#">免责声明</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <h4>关注我们</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-medium"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2023 CryptoTracker. 保留所有权利。</p>
+                <p>风险提示：加密货币交易具有高风险，投资需谨慎。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
