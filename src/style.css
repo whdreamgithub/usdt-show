@@ -633,11 +633,13 @@ tr:hover {
 .ticker-bar .container {
     display: flex;
     align-items: center;
+    overflow-x: auto;
 }
 
 .ticker-content {
     display: flex;
     gap: 30px;
+    white-space: nowrap;
 }
 
 .ticker-item {
