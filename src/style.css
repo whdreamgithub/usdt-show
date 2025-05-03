@@ -606,6 +606,16 @@ tr:hover {
     .footer-links {
         grid-template-columns: 1fr;
     }
+    
+    .ticker-bar .container {
+        overflow-x: hidden;
+    }
+    .ticker-content {
+        display: inline-flex;
+        gap: 30px;
+        white-space: nowrap;
+        animation: ticker-marquee 10s linear infinite;
+    }
 }
 
 @media (max-width: 576px) {
@@ -615,6 +625,15 @@ tr:hover {
     
     .search-box input {
         width: 120px;
+    }
+}
+
+@keyframes ticker-marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
     }
 }
 
